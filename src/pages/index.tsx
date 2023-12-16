@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <>
     <Seo title="BAC CIEL PMF" description="DESCRIPTION"/>
-    <h1>Hello world !</h1>
     </>
   );
 }
