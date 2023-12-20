@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && firebase deploy",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.0.0",
+    "firebase": "^10.7.1",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
