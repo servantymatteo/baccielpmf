@@ -104,6 +104,10 @@ module.exports = {
       DEFAULT: "#1D1D1D",
     }
   },
+  borderRadius:{
+    DEFAULT: "13px",
+    full: "999999px"
+  },
     extend: {},
   },
   plugins: [],
