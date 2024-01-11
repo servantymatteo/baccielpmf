@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { Spinner } from "../spinner/spinner";
 
 interface Props {
   size?: "small" | "medium" | "large";
@@ -35,7 +36,7 @@ export const Button = ({
       break;
     case "outlines":
       variantStyles =
-        "bg-white hover:bg-gray-400/50 border border-gray-500 text-gray-900";
+        "bg-white hover:bg-gray-400/50 border border-gray-500 text-gray-900 rounded";
       break;
     case "disabled":
       variantStyles =
@@ -72,11 +73,35 @@ export const Button = ({
     <>
       <button
         type="button"
-        className={clsx(variantStyles, icoSize, sizeStyles, "")}
-        onClick={() => console.log("click")}
-        disabled={disabled}
+        className={clsx(
+          variantStyles,
+          sizeStyles,
+          icoSize,
+          isLoading && "cursor-wait",
+          "relative"
+        )}
       >
-        {icon && variant === "ico" ? <></> : <>{children}</>}
+        {isLoading && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            {variant === "accent" || variant === "ico" ? (
+              <Spinner size="small" variant="white" />
+            ) : (
+              <Spinner size="small" />
+            )}
+          </div>
+        )}
+
+        <div className={clsx(isLoading && "invisible")}>
+          {icon && variant == "ico" ? (
+            <icon.icon size={icoSize} />
+          ) : (
+            <div className={clsx(icon && "flex items-center gap-1")}>
+              {icon && iconPosition == "left" && <icon.icon size={icoSize} />}
+              {children}
+              {icon && iconPosition == "right" && <icon.icon size={icoSize} />}
+            </div>
+          )}
+        </div>
       </button>
     </>
   );
