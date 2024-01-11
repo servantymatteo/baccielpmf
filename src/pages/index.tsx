@@ -5,6 +5,7 @@ import { Button } from "@/ui/design-system/button/button";
 import { Ri4KFill, RiUser6Fill, RiUser6Line } from "react-icons/ri";
 import { Spinner } from "@/ui/design-system/spinner/spinner";
 import { Logo } from "@/ui/design-system/logo/logo";
+import { Avatar } from "@/ui/design-system/avatar/avatar";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
       <div className="max-w-6xl mx-auto space-y-5 py-10">
         {/* Typography */}
         <div className="space-y-2">
+          <Typography variant="display" weight="medium">
+            Design System
+          </Typography>
           <Typography variant="caption2" weight="medium">
             Typography
           </Typography>
@@ -153,7 +157,19 @@ export default function Home() {
               <Spinner size="large" />
             </div>
           </div>
-          {/* Spinner */}
+          {/* Avatar */}
+
+          <div className="space-y-2">
+            <Typography variant="caption2" weight="medium">
+              Avatar
+            </Typography>
+            <div className="flex items-center gap-2 p-5 border-gray-400 rounded">
+              <Avatar size="small" />
+              <Avatar />
+              <Avatar size="large" />
+            </div>
+          </div>
+          {/* Logo */}
 
           <div className="space-y-2">
             <Typography variant="caption2" weight="medium">
