@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && firebase deploy && git add . && git commit -m 'Fast Build' && git push --set-upstream origin your-branch-name",
+    "build": "next build && firebase deploy && git add . && git commit -m 'Fast Build' && git push --set-upstream origin",
     "start": "next start",
     "lint": "next lint"
   },
