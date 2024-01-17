@@ -52,20 +52,32 @@ export const Button = ({
           "bg-primary-200 hover:bg-primary-300/75 text-primary rounded-full";
       }
       if (iconTheme === "gray") {
-        variantStyles = "bg-gray-700 hover:bg-gray-600 text-white rounded-full";
+        variantStyles = "bg-gray-800 hover:bg-gray-600 text-white rounded-full";
       }
       break;
   }
 
   switch (size) {
     case "small":
-      sizeStyles = "text-caption3 font-medium px-[14px] py-[15px]";
+      sizeStyles = `text-caption3 font-medium ${
+        variant === "ico"
+          ? "flex items-center justify-center w-[40px] h-[40px]"
+          : "px-[14px] py-[12px]"
+      }`;
       break;
     case "medium": // Default
-      sizeStyles = "text-caption2 font-medium px-[18px] py-[15px]";
+      sizeStyles = `text-caption2 font-medium ${
+        variant === "ico"
+          ? "flex items-center justify-center w-[50px] h-[50px]"
+          : "px-[18px] py-[15px]"
+      }`;
       break;
     case "large":
-      sizeStyles = "text-caption1 font-medium px-[22px] py-[18px]";
+      sizeStyles = `text-caption1 font-medium ${
+        variant === "ico"
+          ? "flex items-center justify-center w-[60px] h-[60px]"
+          : "px-[22px] py-[18px]"
+      }`;
       break;
   }
 

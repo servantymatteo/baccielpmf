@@ -1,6 +1,7 @@
 //COMPONENTS
 import { Seo } from "@/ui/components/SEO/seo";
 import { Container } from "@/ui/components/container/container";
+import { Footer } from "@/ui/components/navigation/footer";
 import { Navigation } from "@/ui/components/navigation/navigation";
 
 // DESIGN SYSTEM
@@ -472,6 +473,7 @@ export default function DesignSystem() {
           </div>
         </div>
       </Container>
+      <Footer />
     </>
   );
 }

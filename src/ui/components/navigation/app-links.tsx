@@ -1,6 +1,7 @@
 import { appLinks } from "@/types/appLinks";
+import { RiInstagramLine, RiYoutubeLine } from "react-icons/ri";
 
-export const footerApplicationLinks: appLinks[] = [
+const footerApplicationLinks: appLinks[] = [
   {
     label: "Accueil",
     baseUrl: "/",
@@ -18,7 +19,7 @@ export const footerApplicationLinks: appLinks[] = [
     type: "external",
   },
 ];
-export const footerUserLinks: appLinks[] = [
+const footerUserLinks: appLinks[] = [
   {
     label: "Mon espace",
     baseUrl: "/#",
@@ -35,7 +36,7 @@ export const footerUserLinks: appLinks[] = [
     type: "internal",
   },
 ];
-export const footerInformationLinks: appLinks[] = [
+const footerInformationLinks: appLinks[] = [
   {
     label: "CGU",
     baseUrl: "/#",
@@ -57,6 +58,20 @@ export const footerInformationLinks: appLinks[] = [
     type: "internal",
   },
 ];
+export const footerSocialNetworksLinks: appLinks[] = [
+  {
+    label: "Youtube",
+    baseUrl: "/#",
+    type: "external",
+    icon: RiYoutubeLine,
+  },
+  {
+    label: "instagram",
+    baseUrl: "/#",
+    type: "external",
+    icon: RiInstagramLine,
+  },
+];
 
 export const FooterLinks = [
   {
@@ -70,5 +85,9 @@ export const FooterLinks = [
   {
     label: "Informations",
     links: footerInformationLinks,
+  },
+  {
+    label: "Réseaux Sociaux",
+    links: footerSocialNetworksLinks,
   },
 ];
