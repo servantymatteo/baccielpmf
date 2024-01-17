@@ -27,7 +27,7 @@ interface Props {
 export const Typography = ({
   variant = "h3",
   theme = "black",
-  weight = "regular",
+  weight = "medium",
   className,
   children,
   component: Component = "div",

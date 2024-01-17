@@ -3,9 +3,11 @@ import Image from "next/image";
 
 interface Props {
   size?: "small" | "medium" | "large";
+  alt: string;
+  src: string;
 }
 
-export const Avatar = ({ size = "medium" }: Props) => {
+export const Avatar = ({ size = "medium", src, alt }: Props) => {
   let sizeStyles: string;
   switch (size) {
     case "small":
@@ -19,14 +21,13 @@ export const Avatar = ({ size = "medium" }: Props) => {
       break;
   }
   return (
-    <div className={clsx(sizeStyles, "bg-gray-400 rounded-full")}>
-      {/* <Image
-        src="/asset/image/daniel-lincoln-pe-X2NUwVQo-unsplash 1.png"
-        alt="Avatar de Daniel Lincoln"
-        width={50}
-        height={50}
-        className="rounded-full"
-      /> */}
+    <div className={clsx(sizeStyles, "bg-gray-400 rounded-full relative")}>
+      <Image
+        fill
+        src={src}
+        alt={alt}
+        className="rounded-full object-cover object-center"
+      />
     </div>
   );
 };

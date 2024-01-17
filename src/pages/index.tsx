@@ -1,17 +1,21 @@
 import Head from "next/head";
-import { Seo } from "@/ui/components/seo";
+import { Seo } from "@/ui/components/SEO/seo";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { Button } from "@/ui/design-system/button/button";
 import { Ri4KFill, RiUser6Fill, RiUser6Line } from "react-icons/ri";
 import { Spinner } from "@/ui/design-system/spinner/spinner";
 import { Logo } from "@/ui/design-system/logo/logo";
 import { Avatar } from "@/ui/design-system/avatar/avatar";
+import { Container } from "@/ui/components/container/container";
+import { Navigation } from "@/ui/components/navigation/navigation";
 
 export default function Home() {
   return (
     <>
       <Seo title="BAC CIEL PMF" description="DESCRIPTION" />
-      <div className="max-w-6xl mx-auto space-y-5 py-10">
+      <Navigation />
+
+      <Container className="py-10 space-y-10">
         {/* Typography */}
         <div className="space-y-2">
           <Typography variant="display" weight="medium">
@@ -164,9 +168,20 @@ export default function Home() {
               Avatar
             </Typography>
             <div className="flex items-center gap-2 p-5 border-gray-400 rounded">
-              <Avatar size="small" />
-              <Avatar />
-              <Avatar size="large" />
+              <Avatar
+                src="\asset\image\téléchargé.jpg"
+                alt="Avatar de Daniel Lincoln"
+                size="small"
+              />
+              <Avatar
+                src="\asset\image\téléchargé.jpg"
+                alt="Avatar de Daniel Lincoln"
+              />
+              <Avatar
+                src="\asset\image\téléchargé.jpg"
+                alt="Avatar de Daniel Lincoln"
+                size="large"
+              />
             </div>
           </div>
           {/* Logo */}
@@ -452,7 +467,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </>
   );
 }
