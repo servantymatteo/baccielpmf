@@ -27,12 +27,12 @@ const footerUserLinks: appLinks[] = [
   },
   {
     label: "Connexion",
-    baseUrl: "/#",
+    baseUrl: "/connexion/",
     type: "internal",
   },
   {
     label: "Mot de passes oublié",
-    baseUrl: "/#",
+    baseUrl: "/connexion/mot-de-passe-perdu",
     type: "internal",
   },
 ];

@@ -7,7 +7,7 @@ export const LandigPageView = () => {
     <>
       <HeroTopView />
       <FeaturedView />
-      {/* <VisitVirtuelleCtaView /> */}
+      <VisitVirtuelleCtaView />
     </>
   );
 };

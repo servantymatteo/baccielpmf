@@ -36,7 +36,9 @@ export const Navigation = ({}: Props) => {
             <ActiveLink href="/design-system">Design System</ActiveLink>
           </Typography>
           <div className="flex items-center gap-2">
-            <Button size="small">Connexion</Button>
+            <Button size="small" baseUrl="/connexion/">
+              Connexion
+            </Button>
           </div>
         </div>
       </Container>

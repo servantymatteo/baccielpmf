@@ -20,20 +20,20 @@ const featuresData: FeaturesListInterface[] = [
     description: "Tout savoir sur la formation",
   },
   {
-    imagePath: "/asset/svg/Contact.svg",
+    imagePath: "/asset/svg/contact.svg",
     imagteAlt: "Illustration",
     title: "Contact",
     description: "Contact entre les proffesseurs et les élèves est simplifié",
   },
   {
-    imagePath: "/asset/svg/Poursuite.svg",
+    imagePath: "/asset/svg/poursuite.svg",
     imagteAlt:
       "Illustration d'une personne faisant des recherches sur un ordinateur",
     title: "Poursuite",
     description: "Les possibilités de poursuites d'études",
   },
   {
-    imagePath: "/asset/svg/Ressources.svg",
+    imagePath: "/asset/svg/ressources.svg",
     imagteAlt: "Illustration",
     title: "Ressources",
     description: "Les ressources sont facilements accéssible",
