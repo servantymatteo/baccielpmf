@@ -67,7 +67,7 @@ export const footerSocialNetworksLinks: appLinks[] = [
   },
   {
     label: "instagram",
-    baseUrl: "instagram.com",
+    baseUrl: "https://instagram.com",
     type: "external",
     icon: RiInstagramLine,
   },
