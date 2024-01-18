@@ -61,13 +61,13 @@ const footerInformationLinks: appLinks[] = [
 export const footerSocialNetworksLinks: appLinks[] = [
   {
     label: "Youtube",
-    baseUrl: "/#",
+    baseUrl: "https://www.youtube.com/",
     type: "external",
     icon: RiYoutubeLine,
   },
   {
     label: "instagram",
-    baseUrl: "/#",
+    baseUrl: "instagram.com",
     type: "external",
     icon: RiInstagramLine,
   },

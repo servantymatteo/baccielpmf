@@ -17,6 +17,8 @@ export const SocialNetworkButtons = ({
       variant="ico"
       iconTheme={theme}
       icon={{ icon: socialNetwork.icon }}
+      baseUrl={socialNetwork.baseUrl}
+      linkType={socialNetwork.type}
     />
   ));
   return (
