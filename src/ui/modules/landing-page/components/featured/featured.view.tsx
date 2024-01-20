@@ -23,7 +23,7 @@ const featuresData: FeaturesListInterface[] = [
     imagePath: "/asset/svg/contact.svg",
     imagteAlt: "Illustration",
     title: "Contact",
-    description: "Contact entre les proffesseurs et les élèves est simplifié",
+    description: "Contact entre les professeur et les élèves est simplifié",
   },
   {
     imagePath: "/asset/svg/poursuite.svg",
@@ -85,7 +85,7 @@ export const FeaturedView = () => {
         <div className="grid grid-cols-2 col-span-7 gap-7">{featuredList}</div>
         <div className="col-span-5">
           <Typography variant="h2" component="h2" className="mb-5">
-            Une noucelle filière connectée !
+            Une nouvelle filière connectée !
           </Typography>
           <Typography
             variant="body-lg"

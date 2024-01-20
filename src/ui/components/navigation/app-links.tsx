@@ -35,6 +35,11 @@ const footerUserLinks: appLinks[] = [
     baseUrl: "/connexion/mot-de-passe-perdu",
     type: "internal",
   },
+  {
+    label: "Design System",
+    baseUrl: "/design-system",
+    type: "internal",
+  },
 ];
 const footerInformationLinks: appLinks[] = [
   {

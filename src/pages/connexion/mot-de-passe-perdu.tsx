@@ -1,11 +1,17 @@
 import { Seo } from "@/ui/components/SEO/seo";
 import { Layout } from "@/ui/components/layout/layout";
+import { ForgetPasswordContainer } from "@/ui/modules/authentication/forget-password/forget-password.container";
 
-export default function DesignSystem() {
+export default function ForgetPassowrd() {
   return (
     <>
-      <Seo title="Mot de passe oublié" description="DESCRIPTION" />
-      <Layout>Mot de passe oublié</Layout>
+      <Seo
+        title="Mot de passe oublié"
+        description="Page de récupération du mot de passe"
+      />
+      <Layout>
+        <ForgetPasswordContainer />
+      </Layout>
     </>
   );
 }

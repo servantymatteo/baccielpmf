@@ -39,6 +39,13 @@ export const Navigation = ({}: Props) => {
             <Button size="small" baseUrl="/connexion/">
               Connexion
             </Button>
+            <Button
+              size="small"
+              baseUrl="/connexion/inscription"
+              variant="secondary"
+            >
+              Inscription
+            </Button>
           </div>
         </div>
       </Container>
