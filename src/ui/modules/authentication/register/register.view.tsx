@@ -4,8 +4,13 @@ import { Typography } from "@/ui/design-system/typography/typography";
 import Image from "next/image";
 import Link from "next/link";
 import { RegisterForm } from "./register.form";
+import { FormsType } from "@/types/forms";
 
-export const RegisterView = () => {
+interface Props {
+  form: FormsType;
+}
+
+export const RegisterView = ({ form }: Props) => {
   return (
     <>
       <Container className="grid grid-cols-2 gap-20 mb-32 mt-5">
@@ -24,11 +29,19 @@ export const RegisterView = () => {
           <Box padding_y="py-5">
             <div className=" flex items-center justify-between">
               <div className="">
-                <Typography variant="h5" component="h1">
+                <Typography
+                  variant="h5"
+                  component="h1"
+                  className="
+                "
+                >
                   Inscription
                 </Typography>
               </div>
-              <div className="flex items-center gap-2">
+              <div
+                className="flex items-center gap-2 
+              "
+              >
                 <Typography variant="caption4" component="span" theme="gray">
                   Tu as déjà compte ?
                 </Typography>
@@ -37,7 +50,7 @@ export const RegisterView = () => {
                 </Typography>
               </div>
             </div>
-            <RegisterForm />
+            <RegisterForm form={form} />
           </Box>
         </div>
       </Container>
