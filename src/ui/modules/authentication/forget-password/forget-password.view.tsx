@@ -4,8 +4,13 @@ import { Typography } from "@/ui/design-system/typography/typography";
 import Image from "next/image";
 import Link from "next/link";
 import { ForgerPasswordForm } from "./forgetForm";
+import { FormsType } from "@/types/forms";
 
-export const ForgetPasswordView = () => {
+interface Props {
+  form: FormsType;
+}
+
+export const ForgetPasswordView = ({ form }: Props) => {
   return (
     <>
       <Container className="grid grid-cols-2 gap-20 mb-32 mt-5">
@@ -38,7 +43,7 @@ export const ForgetPasswordView = () => {
                 </Typography>
               </div>
             </div>
-            <ForgerPasswordForm />
+            <ForgerPasswordForm form={form} />
           </Box>
         </div>
       </Container>

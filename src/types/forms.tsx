@@ -11,3 +11,10 @@ export interface RegisterFormFielsType {
   email: string;
   password: string;
 }
+export interface LoginFormFielsType {
+  email: string;
+  password: string;
+}
+export interface forgetFormFielsType {
+  email: string;
+}

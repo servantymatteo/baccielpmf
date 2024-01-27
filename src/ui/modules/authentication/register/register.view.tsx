@@ -42,7 +42,12 @@ export const RegisterView = ({ form }: Props) => {
                 className="flex items-center gap-2 
               "
               >
-                <Typography variant="caption4" component="span" theme="gray">
+                <Typography
+                  variant="caption4"
+                  component="span"
+                  theme="gray"
+                  className="pl-5"
+                >
                   Tu as déjà compte ?
                 </Typography>
                 <Typography variant="caption4" component="span" theme="primary">
@@ -51,6 +56,22 @@ export const RegisterView = ({ form }: Props) => {
               </div>
             </div>
             <RegisterForm form={form} />
+            <Typography
+              variant="caption4"
+              theme="gray"
+              className="max-w-md mx-auto space-y-1 text-center"
+            >
+              <div className="">En t'inscrivant, tu accepetes les</div>
+              <div className="">
+                <Link href="/" className="text-gray">
+                  Concditions d'utilisations
+                </Link>{" "}
+                et{" "}
+                <Link href="/" className="text-gray">
+                  Politique de confidentialité
+                </Link>
+              </div>
+            </Typography>
           </Box>
         </div>
       </Container>
