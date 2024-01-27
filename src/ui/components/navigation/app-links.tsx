@@ -18,6 +18,11 @@ const footerApplicationLinks: appLinks[] = [
       "https://www.site.ac-aix-marseille.fr/lyc-mendesfrance-vitrolles/spip/-00-Accueil-.html",
     type: "external",
   },
+  {
+    label: "Road Map",
+    baseUrl: "https://www.notion.so/Road-Map-730baed017ca438b9da809e91fbc0c36",
+    type: "external",
+  },
 ];
 const footerUserLinks: appLinks[] = [
   {

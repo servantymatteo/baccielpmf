@@ -1,6 +1,12 @@
 import clsx from "clsx";
+
+// Chargement
 import { Spinner } from "../spinner/spinner";
-import { LinkType, LinkTypes } from "@/lib/link-type";
+
+// typage des liens (interne, externe)
+import { LinkTypes } from "@/lib/link-type";
+
+// Liens interne via react
 import Link from "next/link";
 
 interface Props {

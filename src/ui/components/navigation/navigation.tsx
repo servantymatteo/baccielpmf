@@ -2,8 +2,9 @@ import { Logo } from "@/ui/design-system/logo/logo";
 import { Container } from "../container/container";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { Button } from "@/ui/design-system/button/button";
-import Link from "next/link";
 import { ActiveLink } from "./active-link";
+//lien interne
+import Link from "next/link";
 
 interface Props {}
 

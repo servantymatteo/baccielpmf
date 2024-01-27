@@ -1,4 +1,7 @@
+// Pouvoir mettres des variable dans le css
 import clsx from "clsx";
+
+// Images
 import Image from "next/image";
 
 interface Props {

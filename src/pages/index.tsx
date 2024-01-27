@@ -1,5 +1,10 @@
+// Importation du SEO (Titre, Desc)
 import { Seo } from "@/ui/components/SEO/seo";
+
+// Importation du Layout (Navbar, Footer)
 import { Layout } from "@/ui/components/layout/layout";
+
+// Importation du container de la page
 import { LandigPageContainer } from "@/ui/modules/landing-page/landing-page.container";
 
 export default function Home() {

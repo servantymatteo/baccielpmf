@@ -1,7 +1,10 @@
+// dépendence de base externe (clsx , UUIDV4)
+import clsx from "clsx";
+import { v4 as uuidv4 } from "uuid";
+
+// Dépendece interne (BOuton Links footer)
 import { Button } from "@/ui/design-system/button/button";
 import { footerSocialNetworksLinks } from "./app-links";
-import { v4 as uuidv4 } from "uuid";
-import clsx from "clsx";
 
 interface Props {
   theme?: "gray" | "accent" | "secondary";
