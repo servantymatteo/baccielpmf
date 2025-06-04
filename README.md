@@ -22,6 +22,7 @@ Bac Ciel PMF est un site web développé en TypeScript, Tailwind et Firebase pou
 - Création et modification des cours
 - Ajout et suppression de documents
 - Suivi des progrès des élèves
+- Le panneau `/admin` est réservé aux administrateurs et présente quelques fonctionnalités de gestion.
 
 ## Panneau d'élève:
 
